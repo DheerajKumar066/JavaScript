@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bulb Trun OFF/ON Project</title>
+
+    <style>
+    .bulb-container {
+        margin: 25px;
+        padding: 25px;
+        border: 2px solid rgb(202, 19, 111);
+        border-radius: 10%;
+    }
+    button {
+        background-color: #15d5bb;
+        margin: 5px;
+        padding: 15px;
+        border-radius: 10%;
+        border: 2px solid rgb(2, 11, 75);
+    }
+
+    </style>
+</head>
+<body>
+    <h1>Control bulb using these buttons.</h1>
+    <!-- <button id="btn1" onclick="turnOn()"> Trun ON </button> -->
+    <!-- <button id="btn2" onclick="turnOff()"> Trun OFF </button> -->
+    <button id="onoffButton" onclick="toggleBulb()">ON</button>
+
+    <div class="bulb-container">
+        <!-- <img id="bulb" src="Off.png"  alt=""/> -->
+        <img id="bulb" src="Off.png" onclick="toggleBulb()" alt=""/>
+    </div>
+
+
+    <script>
+        //turn onn function
+        const turnOn = () =>
+        {
+            // bulb on
+            let imgOb =document.getElementById("bulb");
+            imgOb.setAttribute("src","ON.png");
+        };
+
+        const turnOff = () => {
+            let imgOb =document.getElementById("bulb");
+            imgOb.setAttribute("src","Off.png");
+
+        }
+        const toggleBulb = () =>{
+            // toggle
+            let imgOb=document.getElementById("bulb");
+            let srcValue = imgOb.getAttribute("src");
+            // console.log(srcValue);
+
+            let buttonOb = document.getElementById("onoffButton");
+            let buttonText = buttonOb.innerHTML;
+            // console.log(buttonText);
+
+            if(srcValue=='Off.png')
+            {
+                turnOn();
+                buttonOb.innerHTML="OFF"
+            }
+            else{
+                turnOff();
+                buttonOb.innerHTML="ON"
+            }
+        }
+    </script>
+</body>
+</html>
