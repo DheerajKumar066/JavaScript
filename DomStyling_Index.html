@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Styling</title>
+</head>
+<body>
+    <button onclick="changeStyle()">Change Style</button>
+    <button onclick="getStyle()">getStyle</button>
+    <h1 id="main">Dom Styling in JS</h1>
+    <h2 id="sub">Best way to learn any language is to practice with docs</h2>
+    <h2 id="subsub">Another way to get better command to make any project on it.</h2>
+    
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+        Quae iste non mollitia eum beatae enim, dolores, laboriosam 
+        dicta placeat facere magnam consectetur nostrum odit veritatis,
+        ad voluptatibus ex vero culpa! Fugit veniam vero, aliquid quos 
+        eaque, ex nesciunt corrupti pariatur ea nostrum ipsum obcaecati 
+        impedit eius? Porro, qui? Hic ducimus rerum sed. Nulla tempore
+        nisi quidem, at, dolorem veniam corporis assumenda voluptatibus
+        error, quis itaque odio suscipit recusandae maiores. Porro 
+        deleniti distinctio ratione animi ab velit quisquam asperiores
+        sapiente exercitationem fugiat. Eligendi commodi aperiam
+        iusto voluptatum inventore dicta provident fugiat veritatis
+        sunt illo explicabo velit est accusamus dolorum praesentium
+        corporis, eius reprehenderit non hic vel laboriosam. Ea nihil 
+        vitae velit veritatis saepe veniam unde officiis ullam nemo, 
+        illo eveniet dolorum inventore optio laboriosam impedit nam
+        magnam! At consectetur aperiam repudiandae, pariatur architecto 
+        est quasi sunt molestias quam, tenetur quae, ea cumque. Velit,
+        aspernatur quaerat quasi animi cupiditate dicta a enim voluptatibus
+        voluptate nesciunt dignissimos soluta vel doloremque. Ab voluptates 
+        magni sint, officiis nulla odit suscipit minima maxime commodi.
+        Quam, fuga eos obcaecati amet atque dicta facere, ea et at unde
+        cumque labore sunt? Quisquam necessitatibus praesentium ducimus 
+        earum laudantium molestias sunt, commodi minima iusto. Optio quis 
+        blanditiis quam inventore accusamus exercitationem, praesentium,
+        adipisci placeat deserunt suscipit molestias! Eius hic nam 
+        tempora laboriosam fugit quasi id voluptatibus placeat ab, 
+        aperiam repellendus qui quam eveniet cupiditate. Pariatur 
+        praesentium harum earum porro, quod officiis sunt veniam incidunt 
+        sit eveniet, fugiat, repudiandae architecto laboriosam quisquam 
+        eaque maiores quibusdam rem! Voluptatibus reprehenderit eveniet 
+        id repudiandae nisi! Eos, minus? Eveniet ipsa quas, beatae nemo 
+        veniam exercitationem laboriosam esse minima totam unde pariatur 
+        reiciendis ab dignissimos, praesentium placeat mollitia, nulla 
+        quae hic cumque quod ut harum rerum? Vitae harum architecto 
+        facere iusto exercitationem quis suscipit distinctio, nemo 
+        inventore, recusandae quod unde odit! Unde perspiciatis dicta 
+        amet perferendis a veritatis facilis sit ratione fugiat ipsum 
+        enim odit quam, modi, voluptatem debitis. Modi necessitatibus 
+        praesentium accusantium facilis ut consequuntur nam dicta mollitia 
+        eaque ratione? Optio, atque nulla corrupti ratione libero id 
+        mollitia facere voluptatem dolorum, reiciendis laudantium ab nisi 
+        corporis reprehenderit ipsa delectus voluptas fuga vero? Aspernatur 
+        nemo, sed tempora corporis laboriosam ducimus modi ipsa saepe 
+        recusandae nisi error magnam quis atque perspiciatis, voluptate omnis 
+        consequuntur? Consequatur soluta natus odit saepe necessitatibus odio 
+        minima hic a doloremque accusamus consectetur eius illo rem explicabo 
+        alias asperiores molestiae neque sit, quisquam, accusantium maiores. 
+        Repellendus quos recusandae quis tenetur, eius iusto ea fugiat sint 
+        odio? Illum, dicta. Nesciunt, natus quam officia voluptatibus hic 
+        facilis aperiam assumenda laudantium itaque, debitis ab atque alias 
+        quas voluptatum quisquam ut vitae ex repudiandae sapiente suscipit. 
+        Repudiandae consequatur, facilis iure cum repellat sunt ipsam in error 
+        eligendi at, eius saepe doloremque ratione consequuntur asperiores 
+        minus. Facilis, vero minima natus iusto ratione ipsum, accusantium 
+        quod beatae eius maxime reprehenderit. Quibusdam repellat accusantium 
+        repudiandae, doloribus inventore eaque corrupti sit quia incidunt qui 
+        maiores natus ipsum porro officiis unde est nulla labore, error 
+        consectetur voluptas, nam voluptatibus! Ullam, delectus veritatis! 
+        Minima, totam. Temporibus iusto quasi explicabo architecto 
+        exercitationem. Rem, autem!</p>
+
+        <script>
+            // Select the elements and do some styling on it.
+
+            let A1 = document.getElementById("main");
+            // Applying style on elements
+
+            const changeStyle = () => {
+            A1.style.color = "#131C73";
+            A1.style.fontSize = "50px";
+            A1.style.fontStyle = "italic";
+            A1.style.border="1px solid #131C73";
+            A1.style.textAlign="center";
+            A1.style.backgroundColor="Aqua";
+            document.body.style.background ="Black";
+            document.body.style.color="white";
+            A1.className = A1.className + "red";
+            };
+
+            const getStyle = () =>{
+                // console.log(A1.style.color);
+                // console.log(A1.style.fontSize);
+                // console.log(A1.style.border);
+
+                let style = window.getComputedStyle(A1);
+                console.log(style.getPropertyValue("color"));
+            }
+            
+
+        </script>
+</body>
+</html> 

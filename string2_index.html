@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>String Important Functions.</h1>
+    <script>
+        let s = "I love javasript";
+        console.log(s);
+        let len=s.length;
+        console.log(len);
+        let s1="and java too.";
+        // console.log(s+" "+s1);
+        let axyz=s.concat(" ",s1);
+        console.log(axyz);
+    
+        let ch = s1.charAt(13);
+        console.log(ch);
+
+        let index = s.indexOf("too");
+        console.log(index);
+        let ind = s1.lastIndexOf("a");
+        console.log(ind);
+        console.log("This is first string : "+s.toUpperCase());
+        console.log("This is second string : "+s1.toLowerCase());
+
+
+        //print--> substring(start , end)
+        // end is not included
+        let sub = s.substring(2,6);
+        console.log("substring(2,6) : "+sub);
+
+
+        // startwith function
+        console.log(s.startsWith("I lo"));
+        // check endwith
+        console.log(s.endsWith("too."));
+
+        // Split
+        let sp=s.split(" ");
+        console.log(typeof sp);
+        console.log(sp);
+        console.log(sp[0]);
+        console.log(sp[1]);
+        console.log(sp[2]);
+        console.log(sp[3]);
+
+        // trim
+
+        let s2 = "         welcome Home      ";
+        let s3 = s2.trim();
+        console.log(s2);
+        console.log(s3);
+
+
+    </script>
+</body>
+</html>

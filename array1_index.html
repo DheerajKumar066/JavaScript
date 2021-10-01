@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array1</title>
+</head>
+<body>
+    <h1>Useful operations on array..</h1>
+    <h2>Datatype of array is not fixed.</h2>
+    <h2>Size of array is also not fixed.</h2>
+    <script>
+        //1.How to create array
+        let arr = [12,56,"sameer",72373,32.7237]
+        console.log(typeof arr);
+        console.log(arr);
+        console.log(arr[2])
+
+        let names = new Array("Dheeraj","aman","sumit","rajanish","subham","alok","kartik");
+        console.log(names);
+        names.push("Rohit");
+        console.log(names);
+        // how to find size of array
+        console.log("size of array is : " ,names.length);
+        // type is not fixed
+        const myDetails=["Dheeraj",9799797997,74.34,["C-DAC panchvati",87634876]];
+        console.log(myDetails);
+        myDetails.push("dheerajspan@gmail.com");
+        console.log(myDetails);
+        console.log(myDetails[3][0]);
+
+
+    </script>
+</body>
+</html>

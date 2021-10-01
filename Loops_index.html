@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>loops</title>
+</head>
+<body>
+    <h1>Loops in JS </h1>
+    <p>1-for Loop  [start, end, termination]</p>
+    <p>for(initialization; condition; increment)
+        {
+            //code to be executed
+        }
+    </p>
+    <p>2-while </p>
+    <p>3-Do...While</p>
+    <p>4-for..in  [used for traversing object property]</p>
+    <p>5-for..of  [uesd for iterable for tring into single elements]</p>
+    <script>
+        // while loop
+        // let i=1;
+        // let b = true;
+        // while(i<=10)
+        // {
+        //     console.log(`Value of is = ${i}`);
+        //     i++;
+        // }
+
+        // let x=1;
+        // let b= true;
+        // while(b){
+        //     console.log(`Value of X = ${x}`);
+        //     x++;
+        //     if(x==11)
+        //     {
+        //         b=false;
+        //     }
+        // }
+        // console.log(b);
+
+// ------------------------------------------------------
+
+        // DO...While Loop
+        // let i=1;
+        // do{
+        //     console.log(`Value of i = ${i}`);
+        //     i++;
+        // }while(i<=10);
+// ------------------------------------------------------
+       /* console.log("For-in Loop");
+        console.log("Example-1");
+        let str1={
+            name:"DHK",
+            phone:97979,
+            address:"Pune",
+        };
+        for(let k in str1)
+        {
+            console.log(`${k}=>${str1[k]}`)
+        }
+        console.log("-----------------------------");
+        console.log("Example-2");
+        let ar = ["iphone","samsung","oppo","vivo"];
+        for(let x in ar)
+        {
+            // console.log(ar[x]);
+            console.log(`${x}=>${ar[x]}`);
+        }
+        */
+        console.log("---------------------------")
+        console.log("For-of loop Examples")
+
+        let ar = ["iphone","samsung","oppo","vivo"];
+        for(let item of ar)
+        {
+            console.log(item);
+        }
+        for(let item in ar)
+        {
+            console.log(item);
+        }
+
+    </script>
+</body>
+</html>

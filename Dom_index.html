@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body>
+    <h1>Dom-(Document object Model)</h1>
+    <h2 id = "banner">Best way to learn any language is to practice everyday</h2>
+    <!-- h1*3{Hello World} -->
+    <h1 class="myclass">Hello World</h1>
+    <h1 class="myclass">Hello World</h1>
+    <h1 class="myclass">Hello World</h1>
+
+    <script>
+        console.log("inside body");
+        // let ht = document.documentElement;
+        // let bo = document.body;
+        // let he = document.head;
+        // let ti = document.title;
+        // console.log(ti);
+
+        // console.log(ht);
+        // console.log(bo);
+        // console.log(he);
+        // let h2 = document.getElementById("banner");
+        // console.log(h2);
+        // h2.innerHTML = "Changed Text";
+        // h2.style.color = "Red";
+        // h2.style.backgroundColor = "Orange";
+
+
+
+        // selecting element by class name
+        // getElementsbyclassName(classname)
+/*
+        let el = document.getElementsByClassName("myclass");
+        console.log(typeof el);
+
+        for(let element of el)
+        {
+            console.log(element);
+            element.style.color = "Red";
+            element.style.backgroundColor = "Orange";
+        }
+*/
+
+// Selecting Elemnt with the help of css selector
+        // querySelector-single elemnt
+        // querySelectorAll-list of elements
+
+        let els = document.querySelectorAll(".myclass");
+        for(let e of els)
+        {
+            console.log(e);
+            e.style.color ="White";
+            e.style.backgroundColor = "Orange";
+        }
+        let x = document.getElementsByTagName("h2");
+        console.log(x);
+    </script>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Array Operations</title>
+</head>
+<body>
+    <h1>important operations on array</h1>
+    <script>
+        // array operations
+        // .Create
+        let name=["captan","peter","thor","ironman"];
+        console.log(name);
+        console.log(name.length);
+        // Array access using index
+        console.log(name[0]);
+        console.log(name[3]);
+
+        // loop over an array
+        // forEach
+
+        name.forEach(function(item,index){
+            //this is function body
+            console.log(index,"=> ",item);
+        });
+        console.log(name);
+
+
+        let nums=[22,33,45,,51,23,72];
+        let sum=0;
+        nums.forEach(function(it,i){
+            sum=sum+it;
+        });
+        console.log("SUM : ", sum);
+
+// ------------------------------------------
+        // name.push["Hokayi","Wanda","Natasa"];
+        // Push : is used for add single element at a time in the array
+        // so the currect way to add elemnt in the array is
+        name.push("Hokayi");
+        name.push("Wanda");
+        name.push("Natasa");
+
+        console.log(name);
+
+        let r= name.pop();
+        console.log(name);
+        console.log(name.pop());
+        console.log(name);
+// pop is used for removing elemnts for end of the stack
+
+        let sup=name.shift();
+        // here shift is used for removing fist element of stack
+        console.log(sup);
+        console.log(name);
+
+        let sup2=name.unshift("Loki"); //used for add element at fornt of stack
+        console.log(sup2);
+        console.log(name);
+        let pos=name.indexOf("peter");
+        console.log(pos);
+        // splice is used to remove the element from any position 
+        // splice(pos,n)
+        console.log(name.splice(1,2));
+        console.log(name);
+
+        // copy and array 
+        // slice
+        let copy = name.slice();
+        console.log(copy);
+        console.log(name);
+
+        // arr.length() ---> error
+        // arr.length---->True
+        
+       
+         
+    </script>
+</body>
+</html>

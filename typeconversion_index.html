@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Type Conversion(type casting)</h1>
+    <h5>Two way of type conversions</h5>
+    <h6>1.Automatic</h6>    
+    <h6> 2. Manually(explicite)</h6>
+
+    <script>
+
+        // 1 String Conversion
+        let a=12;
+        console.log(typeof a);
+        let as = String(a);
+        console.log(as)
+        console.log(typeof as)
+        console.log(as.length)
+
+
+        // 
+        console.log(a.toString());
+
+
+        // 2-Number Conversion
+        console.log(String(false));
+
+        // numeric conversion
+        let value="1224";
+        let ax=Number(value);
+        console.log(value+5);
+        console.log(ax + 55);
+
+
+        // partInt
+        // parseFloat
+
+        let pint =parseInt(value);
+        console.log(pint);
+        console.log(typeof pint);
+
+
+        let f1="63764137.7347";
+        let f2=Number(f1);
+        console.log(f2);
+        console.log(typeof f1 , " And ", typeof f2);
+        console.log(parseFloat(f1));
+
+
+        // undefined,false,true,null
+
+        console.log(Number(true))
+        console.log(Number(undefined))
+        console.log(Number(null))
+        console.log(Number(false))
+
+
+        // 3-Boolen conversion   
+
+        let ex="Convert it into Boolean";
+        let ex1=Boolean(ex);
+        console.log(typeof ex);
+
+        console.log("Ex1 : "+ex1);
+        console.log(typeof ex1);
+
+
+
+    </script>
+</body>
+</html>

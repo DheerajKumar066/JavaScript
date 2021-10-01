@@ -1,0 +1,19 @@
+{
+	"folders": [
+		{
+			"path": "../Learn-JS"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "JavaScript",
+		"liveServer.settings.CustomBrowser": "chrome"
+	},
+	"extensions": {
+		"recommendations": [
+			"ritwickdey.liveserver"
+		]
+	}
+}

@@ -1,0 +1,46 @@
+<html>
+<body>
+   <div id="main">
+       <h1 id="title">Hello World!</h1>
+       <p id="hint">This is simple paragraph of Dom Manipulation.</p>
+       
+   </div>
+   <button onclick="addNode()"> Add Node</button>
+
+
+   <script>
+    //    adding node function
+    
+    function addNode(){
+         console.log("adding node");
+         let divElement = document.createElement("div");
+
+
+        //  console.log(divElement);
+
+        //  create a textnode
+        let textElement = document.createTextNode("This Dom Manipulation using function !!");
+        let textElement1 = document.createTextNode("Here we can add multiple text using text node.")
+
+        // adding text node to divElements
+        divElement.appendChild(textElement);
+        divElement.appendChild(textElement1)
+        console.log(divElement);
+
+
+
+
+        let mainElement = document.getElementById("main");
+        mainElement.appendChild(divElement);
+
+        let titleElement = document.getElementById("title");
+        // mainElement.insertBefore(divElement,titleElement);
+
+        titleElement.innerHTML = " <h3> This is project of NREDCAP </h3> ";
+
+        mainElement.removeChild(titleElement);
+    }
+
+   </script>
+</body>
+</html>

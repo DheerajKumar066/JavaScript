@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Navigation</title>
+</head>
+<body>
+   <div id="container">
+    <h1 id="title"> We are going to learn JS</h1>
+    <p id="content">
+        <span>
+            JavaScript is the one of the most programing language for front end as well as backed
+            it is powerfull scripting language.
+        </span>
+    </p>
+    <h2>
+        Practice for get more knowledge in JS.
+    </h2>
+   </div>
+   <button onclick="btnClicked()">Click Me </button>
+<script>
+    function btnClicked() {
+        // JavaScript code write here
+        let ContainerOb = document.getElementById("container");
+        // console.log(ContainerOb);
+        console.log(ContainerOb.firstChild.nodeName);
+
+        let firstChild = ContainerOb.firstElementChild;
+
+        firstChild.innerHTML = "Hello Now change the Header !"
+
+        let lastChild = ContainerOb.lastElementChild;
+        lastChild.style.backgroundColor = "red";
+        lastChild.style.color = "yellow";
+        // console.log(lastChild);
+
+        let nodes = ContainerOb.children;
+        for(let n of nodes){
+            console.log(n.nodeName);
+        }
+        // ---parentNode
+        let parentNode = ContainerOb.parentNode;
+        console.log(parentNode.nodeName);
+
+
+        // previousSibling and nextSibling
+        let titleOb = document.getElementById("title");
+        let nextS = titleOb.nextElementSibling;
+        console.log(nextS.nodeName);
+    }
+</script>
+</body>
+</html>

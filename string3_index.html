@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String</title>
+</head>
+<body>
+    <h1>1.String Five importan Operations.</h1>
+    <h3>2.How to check equality of two string. </h3>
+    <h3>3.comparing two string</h3>
+    <h3>4.Replace certain word with another</h3>
+    <h3>5.accessing character tring[0] charAt(index)</h3>
+    <h3>6.converting string to array using split function</h3>
+    <script>
+        //primitive way to strore string
+        let str1="Panasonic";
+        let str2="Panasonic";
+        console.log(str1==str2);
+        if(str1==str2)
+        {
+            console.log("Both string are equal");
+        }
+
+        //this is the object way to store string.
+        let str3 = new String("Javascript")
+        let str4 = new String("Javascript")
+        console.log(str3)
+        console.log(str4)
+        console.log(str3==str4)
+
+        // comparing two strings
+        let s1="C";
+        let s2="B";
+        let result=s1.localeCompare(s2)
+        //A=65,B=66,...
+        //s1>s2:1
+        //s1=s2:0
+        //s1<s2:-1
+        console.log(result);
+
+        console.log(s2.charCodeAt(0));
+
+
+        // 3.Replace certain string with another
+        let oldstr="I hate javasrcipt.";
+        let newstr=oldstr.replace("hate","Love");
+        console.log(oldstr);
+        console.log("After replacing the string :"+newstr);
+
+        //4.accessing character string[0]
+        // charAt(index)
+
+        console.log(oldstr.charCodeAt(0));
+        console.log(oldstr[2]);
+
+
+        // converting string to array using string
+        let as = oldstr.split(" ");
+        console.log(as);
+        let chara = oldstr.split("");
+        console.log(chara);
+    </script>
+</body>
+</html>

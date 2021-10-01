@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Object Operatrions</title>
+</head>
+<body>
+    <h1>Math object Operations</h1>
+    <script>
+        // Maths trelated operations
+
+        function area_of_circle(r)
+        {
+            console.log(Math.PI);
+            // let area = Math.PI*r*r;
+            let area = Math.PI * Math.pow(r,2);           return area;
+        }
+        console.log(`Area of circle with radius 5 is ${area_of_circle(5)}`);
+
+
+        let a = -123;
+        console.log(Math.abs(a));
+
+        let ran = Math.random();
+        console.log(ran)
+        let three_digit_number = ran*1000;
+        console.log(Math.round(ran*1000));
+
+
+        // removing digit value 
+        console.log(Math.trunc(three_digit_number));
+
+        console.log(Math.sqrt(150));
+        
+    </script>
+</body>
+</html>
